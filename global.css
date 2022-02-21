@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300&family=Source+Sans+3:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1 Code', sans-serif;;
+}
+*:not(.naw-black)::selection {
+    background-color: black;
+    color: white;
+}
+body, html {
+    background-color: #E5E5E5;
+}
+
+/* global classes */
+.bg-secondary{
+    background-color: #979797;
+}
+.bg-primary-w {
+    background-color: #eff2f6;
+}
+.bg-primary-b {
+    background-color: #0D0D0D;
+}
+.txt-secondary{
+    color: #979797;
+}
+.txt-primary {
+    color: #000000;
+}
+.txt-third {
+    color: #0D0D0D;
+}
+.selection-white ::selection{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.black-btn {
+    display: inline-block;
+    background-color: #0D0D0D;
+    font-weight: 600;
+    width: 397px;
+    padding: 14px 0;
+    text-align: center; 
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.black-btn:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+/* custom checkbox */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+.custom-checkbox  .custom-label {    
+    position: relative;
+    cursor: pointer;
+}
+.custom-checkbox  .custom-label::before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    background-color: transparent;
+    border: 1px solid #0D0D0D;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.custom-checkbox input:checked + .custom-label::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    left: 7px;
+    width: 6px;
+    height: 14px;
+    border: solid #0D0D0D;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+/* header */
+nav {
+    border-bottom: 1px #FFFFFF solid;
+}
+.header-text{
+    text-decoration: none;
+}
+a.white{
+    color: white;
+    font-weight: 400;
+}
+a.black{
+    color: black;
+    font-weight: 400;
+}
+.nav-black, .nav-white {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 141px 0 145px;
+}
+.nav-black{
+    height: 45px;
+    background: #000000;
+}
+.nav-white{
+    height: 59px;
+    background: #E5E5E5;
+}
+.nav-white .categories input {
+    border: none;
+    background-color: #E5E5E5;
+    position: relative;
+    right: 12.15px;
+}
+.nav-white a:hover{
+    text-decoration: underline;
+}
+.nav-white a#active{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.nav-white div {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.nav-white .login-shop{
+    gap: 14px;
+}
+.nav-white .login-shop span {
+    position: relative;
+    right: 5px;
+}
+.nav-white input#search::placeholder {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -.6px;
+    color: #979797;
+}
+.nav-white input#search:focus{
+    outline: none;
+}
+
+/* footer */
+footer {
+    height: 419px;
+    background-color: #EFF2F6;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-left {
+    margin-left: 145px;
+}
+.footer-left h3 {
+    font-size: 36px;
+    font-weight: 900 !important;
+    letter-spacing: -1.5px;
+    color: #000000;
+    width: 430px;
+}
+.footer-left p{
+    padding-bottom: 23px;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: -.3px;
+}
+.footer-left input{
+    width: 430px;
+    border: .5px solid #000000;
+    caret-color: black;
+    height: 40px;
+    padding-left: 1em;
+}
+.footer-left input::placeholder{
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    font-weight: 400;
+
+}
+.footer-left input:focus{
+    outline: none;
+}
+.footer-left span a{
+    position: relative;
+    right: 80px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+.footer-left span a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 80px;
+}
+.footer-right ul li{
+    list-style-type: none;
+    padding-right: 75px;
+    color: #111111;
+}
+
+.footer-right ul li:first-child{
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -.4px;
+}    
+.footer-right ul li a{
+    text-decoration: none;
+    color: #111111;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -.2px;
+}
+.footer-right ul li a:hover{
+    text-decoration: underline;
+}

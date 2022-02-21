@@ -1,0 +1,64 @@
+/* navbar */
+.nav-white {
+    background-color: #0D0D0D;
+    color: #FFFFFF !important;
+}
+.nav-white a, .nav-white input::placeholder {
+    color: #FFFFFF;
+}
+.nav-white input[type="text"], .nav-white input::placeholder {
+   background-color: #0D0D0D;
+   color: #FFFFFF;
+}
+
+/*container*/
+.container {
+    position: absolute;
+    left: 472px;
+    top: 156px;
+    width: 456px;
+    height: 318px;
+    padding: 35px 34px;
+}
+h2 {
+    margin-bottom: 8px;
+}
+.loginTo{
+    color: #A9ABBD;
+}
+.container a:not(.createAcc){
+    border: 1px solid #dacbcb;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 388px;
+    padding: 14px 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #65676E;
+    text-decoration: none;
+}
+.container a:hover:not(.createAcc){
+    box-shadow: 0 0 2.5px #383737;
+}
+.fb{
+    margin-top: 19px;
+}
+.email {
+    margin-bottom: 41px !important;
+}
+.createAcc {
+    padding-top: 28px;
+    display: block;
+    text-align: center;
+    color: #A9ABBD;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+.createAcc span {
+    font-weight: 700;
+}

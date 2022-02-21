@@ -1,0 +1,224 @@
+body, html {
+    background-color: #E5E5E5;
+}
+
+/* navbar */
+.nav-white {
+    background-color: #0D0D0D;
+    color: #FFFFFF !important;
+}
+.nav-white a, input::placeholder {
+    color: #FFFFFF;
+}
+.nav-white input[type="text"], .naw-white input::placeholder {
+   background-color: #0D0D0D;
+   color: #FFFFFF;
+}
+
+/*------------*/
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 51px 0 104px 0;
+    gap: 285px;
+}
+
+/*address orderInfo*/
+.process {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 35px;
+}
+.shipping-info {
+    font-size: 20px;
+    color: #252525;
+    margin-bottom: 12px;
+}
+
+/*payment method*/
+.payment-method {
+    display: flex;
+    gap: 5.5px;
+}
+.payment-method button{
+    width: 153.45px;
+    height: 38.36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 21.5px;
+    cursor: pointer;
+}
+.paypal {
+    border: 1px solid #1D4D90;
+}
+.paypal:hover {
+    box-shadow: 0 0 4px #1D4D90;
+}
+.apple{
+    background-color: #252525;
+    color: white;
+    border: none;
+}
+.apple:hover{
+    box-shadow: 0 0 4px #252525;
+}
+
+
+/*form*/
+.address {
+    width: 398px;
+}
+form {
+    width: inherit;
+} 
+form input, select{
+    height: 40px;
+    border: .5px solid rgb(0, 0, 0);
+    display: inline-block;
+    width: 398px;
+    margin-bottom: 10px;
+    padding: 11.5px 16px;
+}
+.addressForm input::placeholder {
+    color: #888890;
+    font-size: 14px;
+} 
+form input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+}
+.w-50 {
+    width: 195px;
+}
+.w-33 {
+    display: inline-block;
+    width: 119.25px;
+}
+
+select {
+    display: inline-block;
+    width: 119.25px;
+    margin-right: 12px;
+    height: 40px;
+}
+.custom-label {
+    color: #979797;
+    font-size: 14px;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*save card*/
+.save-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 39px;
+    height: 24px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+ input:checked + .slider {
+    background-color: #797676;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #797676;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*product*/
+#yourCard {
+    font-size: 20px;   
+    letter-spacing: -.4px;
+    margin-bottom: 21px;
+}
+.container .fw600-fs22{
+    font-weight: 600;
+    font-size: 22px;
+}
+.product *:not(.fw600-fs22) {
+    font-size: 14px;
+    font-weight: 600;
+}
+.product .details {
+    display: inline-block;
+}
+.product .details :last-child {
+    display: block;
+    text-align: end;
+}
+.product .details *:not(a) {
+    position: relative;
+    top: 7px;
+    left: 8px;
+    padding-bottom: 7.5px;
+}
+.details a{
+    color: #000000;
+    position: relative;
+    left: 50px;
+}
+
+/*order summary*/
+.order-summary { /*idk what this is for*/
+    margin-top: 60px;
+    width: 398px;
+}
+
+

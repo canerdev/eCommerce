@@ -1,0 +1,103 @@
+body, html {
+    background-color: #E5E5E5;
+}
+
+/* navbar */
+.nav-white {
+    background-color: #0D0D0D;
+    color: #FFFFFF !important;
+}
+.nav-white a, input::placeholder {
+    color: #FFFFFF;
+}
+.nav-white input[type="text"], .naw-white input::placeholder {
+   background-color: #0D0D0D;
+   color: #FFFFFF;
+}
+
+/*---------*/
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 51px 0 104px 0;
+    gap: 285px;
+}
+/*address orderInfo*/
+.process {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 35px;
+}
+.shipping-info {
+    font-size: 20px;
+    color: #252525;
+    margin-bottom: 12px;
+}
+
+/*shipping options*/
+.shipping-option input {
+    display: none;
+}
+.shipping-option {
+    border: 2px solid #000000;
+    padding: 20px 0;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.custom-label, input {
+    position: relative;
+    right: 95px;
+}
+.shipping-time {
+    position: relative;
+    right: 75px;
+}
+
+.black-btn {
+    margin-top: 100px;
+}
+/*product*/
+#yourCard {
+    font-size: 20px;   
+    letter-spacing: -.4px;
+    margin-bottom: 21px;
+}
+.container .fw600-fs22{
+    font-weight: 600;
+    font-size: 22px;
+}
+.product *:not(.fw600-fs22) {
+    font-size: 14px;
+    font-weight: 600;
+}
+.product .details {
+    display: inline-block;
+}
+.product .details :last-child {
+    display: block;
+    text-align: end;
+}
+.product .details *:not(a) {
+    position: relative;
+    top: 7px;
+    left: 8px;
+    padding-bottom: 7.5px;
+}
+.details a{
+    color: #000000;
+    position: relative;
+    left: 50px;
+}
+
+/*order summary*/
+.order-summary { /*idk what this is for*/
+    margin-top: 60px;
+    width: 398px;
+}
+
+

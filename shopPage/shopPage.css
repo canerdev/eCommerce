@@ -1,0 +1,252 @@
+/* navbar */
+.nav-white {
+    background-color: #0D0D0D;
+    color: #FFFFFF !important;
+}
+.nav-white a, input::placeholder {
+    color: #FFFFFF;
+}
+.nav-white input[type="text"], input::placeholder {
+   background-color: #0D0D0D;
+   color: #FFFFFF;
+}
+/* info section */
+.info {
+    padding-left: 145px;
+    color: #FFFFFF;
+}
+.info :first-child {
+    padding-top: 34px;
+    padding-bottom: 9px;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: -3%;
+}
+.info :last-child {
+    padding-bottom: 47px;
+    font: normal 900 18px;
+}
+
+/* filters */
+.product-page .filters {
+    padding-left: 145px;
+    padding-top: 43px;
+}
+.product-page .filters * {
+    margin-bottom: 20px;
+}
+.product-page .filters p:first-child {
+    font-size: 22px;
+    font-weight: 600;
+
+}
+.product-page .filters p:first-child::after {
+    content: 'Clear filters';
+    color: #C4C4C4;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.product-page .filters p:not(:first-child) {
+    font-weight: 800;
+    letter-spacing: -0.4px;
+}
+.product-page .filters form * {
+    display: inline-block;
+    margin-bottom: 7.5px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: -.4px;
+}
+
+/* custom checkbox */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+.custom-checkbox  .custom-label {    
+    position: relative;
+    cursor: pointer;
+}
+.custom-checkbox  .custom-label::before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    background-color: transparent;
+    border: 1px solid #0D0D0D;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.custom-checkbox input:checked + .custom-label::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    left: 7px;
+    width: 6px;
+    height: 14px;
+    border: solid #0D0D0D;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* filter colors */
+.product-page .filters .colors span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #0D0D0D;
+    margin: 0;
+    cursor: pointer;
+}
+.product-page .filters .colors::selection {
+    background-color: #eff2f6;
+}
+.product-page .filters .colors span:nth-child(1) {
+    background-color: #DF9167;
+}
+.product-page span:nth-child(2) {
+    background-color: #7B61FF;
+}
+.product-page span:nth-child(3) {
+    background-color: #219653;
+}
+.product-page span:nth-child(4) {
+    background-color: #2F80ED;
+}
+.product-page span:nth-child(5) {
+    background-color: #EB5757;
+}
+.product-page span#color-6 {
+    background-color: #56CCF2;
+}
+.product-page span#color-6 + span {
+    background-color: #4F4F4F;
+}
+.product-page span#color-8 {
+    background-color: #BB6BD9;
+}
+.product-page span:last-child {
+    background-color: #6FCF97;
+}
+
+
+/* dropdown */
+.sort-number {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 18px;
+    max-width: 900px; /* for vertical alignment */
+}
+.dropdown button {
+    display: inline-block; /*for dropdown menu*/
+    width: 167px;
+    height: 37px;
+    margin-top: 46px;
+    margin-bottom: 9px;
+    border: 1px solid #1C275A;
+    padding: 5px 13px;
+}
+.dropdown button *:not(:last-child) {
+    padding-right: 8px;
+}
+.dropdown button span {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    color: #000000;
+    opacity: .6;
+}
+.dropdown button strong {
+    font-size: 14px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown .sort-choices {
+    display: none;
+    position: relative;
+    min-width: 100%;
+    z-index: 1;
+    top: 83px;
+}
+.sort-choices a {
+    display: block;
+    padding: 5px 13px;
+    border: 1px solid #1C275A;
+    border-top: none;
+    background-color: #eff2f6;
+
+}
+.sort-choices a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.dropdown:hover .sort-choices {
+    display: block;  
+    position: absolute;
+}
+/* products */
+.product-page {
+    display: flex;
+    padding-bottom: 50px;
+}
+.product-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 975px;
+    gap: 20px;
+} 
+.product-card{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    color: #000000;
+}
+.product-card .name-size {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+.product-card .name {
+    font-weight: 700;
+}
+.product-card .name a {
+    text-decoration: none;
+    color: #000000;
+}
+#btn-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn-center button {
+    padding: 14px 77px;
+    color: #0D0D0D;
+    font-weight: 600;
+    margin-top: 50px;
+    border: 1px solid #0D0D0D;
+    transition: all .25s ease-in-out;
+}
+#btn-center button:active {
+    position: relative;
+    top: 2px;
+}
+#btn-center button:hover {
+    background-color: #000000;
+    color: white;
+}

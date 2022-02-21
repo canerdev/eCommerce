@@ -1,0 +1,55 @@
+/* hero 1 */
+.hero_1 {
+    background-color: #EFF2F6;
+    text-align: center;
+    padding-top: 66px;
+    height: 1035px;
+}
+
+.hero_1 h2 {
+    font-weight: 600px;
+    font-size: 56px;
+    line-height: 62px;
+    letter-spacing: -2.4px;
+    margin-bottom: 19px;
+}
+
+.hero_1 p {
+    max-block-size: 610px;
+    height: 84px;
+    color: #979797;
+    outline: #0D0D0D;
+}
+.hero_1 a#shopAll {
+    color: #0D0D0D;
+    font-weight: 600;
+    border: 1px solid #0D0D0D;
+    text-decoration: none;
+    padding: 14px 66px;
+    transition: all .25s ease-in-out;
+}
+
+.hero_1 a#shopAll:hover {
+    background-color: black;
+    color: white;
+}
+
+.hero_1 .empty {
+    width: 1250px;
+    height: 521px;
+    position: relative;
+    left: 145px;
+    background-color: #C4C4C4;
+    margin-top: 40px;
+}
+
+.hero_1 .images {
+    display: flex;
+    align-items:center;
+    gap: 56px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+
