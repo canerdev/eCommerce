@@ -1,1 +1,1 @@
-# eCommerce
+I have made an eCommerce website by using HTML & Pure CSS. As the Figma kit has had only web desing, it is not responsive. Also, you can find the kit here https://www.figma.com/file/ChuXtQjOxVUAC2qLDvAMb5/Ecommerce-Wireframe-Kit-(Community)?node-id=39%3A280.
